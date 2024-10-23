@@ -1,5 +1,5 @@
-# Alt+F4 is very cumbersome
-gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
+# Alt+F4 is ingrained after many years of using windows
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w', '<Alt>F4']"
 
 # Make it easy to maximize like you can fill left/right
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
