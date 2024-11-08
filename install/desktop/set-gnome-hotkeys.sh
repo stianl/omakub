@@ -28,13 +28,15 @@ gsettings set org.gnome.shell.keybindings switch-to-application-7 "['<Super>7']"
 gsettings set org.gnome.shell.keybindings switch-to-application-8 "['<Super>8']"
 gsettings set org.gnome.shell.keybindings switch-to-application-9 "['<Super>9']"
 
-# Use super for workspaces
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>F1', '<Super>Home']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>F2']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>F3']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>F4']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>F5']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>F6', '<Super>End']"
+# Use super + F keys or Ctrl + num for workspaces
+# Super+F keys was too acrobatic and really messing with my left thumb - still keeping it as it does not conflict with anything
+# I can hit <Ctrl> with my palm making it a lot more ergonomic - it's also the same shortcut macOS uses by default
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>F1', '<Ctrl>1', '<Super>Home']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>F2', '<Ctrl>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>F3', '<Ctrl>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>F4', '<Ctrl>4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>F5', '<Ctrl>5']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>F6', '<Ctrl>6', '<Super>End']"
 
 # Reserve slots for custom keybindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
